@@ -42,7 +42,6 @@ setTimeout(() => {
   const circle = document.querySelector(".circle");
   const btn = document.querySelector("button");
   const filled = document.querySelector("#filled");
-  console.log(filled);
 
   let cntstep = 100 / allspans,
     cnt = 0;
@@ -64,7 +63,6 @@ setTimeout(() => {
     if (cnt < 100) {
       progress.setAttribute("value", cnt);
       circle.style.left = "calc(" + cnt + "% - 8px)";
-      console.log(cnt);
     }
     if (cnt === 100) {
       progress.setAttribute("value", cnt);
